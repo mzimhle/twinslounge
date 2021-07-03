@@ -1,0 +1,27 @@
+[11-Jun-2015 10:39:20 Africa/Johannesburg] PHP Warning:  require_once(global_functions.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/twinsloungeco/public_html/default.php on line 15
+[11-Jun-2015 10:39:20 Africa/Johannesburg] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'global_functions.php' (include_path='/home/twinsloungeco/public_html/:/home/twinsloungeco/public_html/library/classes/') in /home/twinsloungeco/public_html/default.php on line 15
+[11-Jun-2015 10:39:30 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 229]: syntax error: unrecognized tag: $(".alert").alert();
+
+        $(".fake-btn").click(function(){
+            $(this).slideUp(400); (Smarty_Compiler.class.php, line 446) in /home/twinsloungeco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jun-2015 11:14:17 Africa/Johannesburg] PHP Fatal error:  Smarty error: [in default.tpl line 237]: syntax error: unrecognized tag: $(".alert").alert();
+
+        $(".fake-btn").click(function(){
+            $(this).slideUp(400); (Smarty_Compiler.class.php, line 446) in /home/twinsloungeco/public_html/library/classes/smarty/Smarty.class.php on line 1095
+[11-Jun-2015 12:36:45 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Column 'participantlogin_username' cannot be null' in /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/twinsloungeco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/twinsloungeco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(546): Zend_Db_Adapter_Abstract->query('INSERT INTO `pa...', Array)
+#3 /home/twinsloungeco/public_html/library/classes/Zend/Db/Table/Abstract.php(1053): Zend_Db_Adapter_Abstract->insert('participantlogi...', Array)
+#4 /home/twinsloungeco/public_html/library/classes/class/participantlogin.php(74): Zend_Db_Table_Abstract->insert(Array)
+#5 /home/twinsloungeco/public_html/default.php(85): class_participantlogin->insertLogin(Array, 'EMAIL', '317744191877 in /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214
+[11-Jun-2015 12:45:22 Africa/Johannesburg] PHP Fatal error:  Uncaught exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : No data supplied for parameters in prepared statement' in /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement.php(300): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/twinsloungeco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(468): Zend_Db_Statement->execute(Array)
+#2 /home/twinsloungeco/public_html/library/classes/Zend/Db/Adapter/Abstract.php(725): Zend_Db_Adapter_Abstract->query(Object(Zend_Db_Select), Array)
+#3 /home/twinsloungeco/public_html/library/classes/class/participant.php(99): Zend_Db_Adapter_Abstract->fetchRow(Object(Zend_Db_Select))
+#4 /home/twinsloungeco/public_html/complete.php(21): class_participant->getByCode(NULL)
+#5 {main}
+  thrown in /home/twinsloungeco/public_html/library/classes/Zend/Db/Statement/Mysqli.php on line 214

@@ -1,0 +1,33 @@
+@media (min-width: 768px){
+    
+}
+@media (min-width: 992px) {
+    .logo-box{
+        padding-top: 25%;
+    }
+    .logo-box img{
+        max-width: 120px;
+    }
+}
+@media (min-width: 1200px) {
+    .logo-box{
+        padding-top: 30%;
+    }
+    .logo-box img{
+        max-width: 155px;
+    }
+}
+@media (max-height: 720px) {
+    .logo-box{
+        padding-top: 20%;
+    }
+    .logo-box img{
+        max-width: 120px;
+    }
+}
+@media screen and (max-width: 767px) {
+    
+}
+@media (max-width: 480px) and (orientation: landscape) {
+    
+}
